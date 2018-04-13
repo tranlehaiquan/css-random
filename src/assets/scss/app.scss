@@ -2,10 +2,18 @@
 
 @import 'settings';
 
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/grid";
+
 @import 'font-awesome.scss';
+
 @import './components/_reboot.scss';
 @import './components/_rest.scss';
-@import './components/_layout.scss';
 
+@import './components/_news.scss';
 @import './components/_box-list.scss';
 

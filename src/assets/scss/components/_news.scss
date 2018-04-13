@@ -1,0 +1,18 @@
+.news {
+  &__img {
+    position: relative;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  &__mask-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+}

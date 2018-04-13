@@ -1,40 +1,44 @@
 .box-list {
+  $p-x: 20px;
+  $p-y: 15px;
   border: 1px solid #eee;
   &__header {
     h3 {
       margin: 0;
       font-weight: normal;
+      line-height: 1.1em;
+      font-size: 1.5em;
     }
-    padding: 15px 20px;
+    padding: $p-y $p-x;
     position: relative;
     &:before,
     &:after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 20px;
+      left: $p-x;
     }
     &::before {
-      width: calc(100% - 40px);
+      width: calc(100% - #{$p-x * 2});
       height: 2px;
       background-color: #eee;
     }
     &::after {
-      width: 40px;
+      width: $p-x * 2;
       height: 2px;
       background: slategrey;
     }
 
     i {
       position: absolute;
-      right: 20px;
+      right: $p-x;
       top: 50%;
       transform: translateY(-50%);
       padding: 5px;
     }
   }
   &__body {
-    padding: 10px 20px;
+    padding: $p-y/2 $p-x;
   }
   &__list {
     padding: 0;
